@@ -2,12 +2,12 @@ name: Ashum989/CHASE
 
 on:
   push:
-    branches: [main]
+    branches: [main,Index.php]
   pull_request:
-    branches: [main]
+    branches: [main,Index.php]
 
 env:
-  Branches: main
+  Branches: main,Index.php
   MainBranch: main
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: npm i
