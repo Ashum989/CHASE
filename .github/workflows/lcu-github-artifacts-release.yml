@@ -2,17 +2,19 @@ name: Ashum989/CHASE
 
 on:
   push:
-    branches: [main,Index.php]
+    branches: [main]
   pull_request:
-    branches: [main,Index.php]
+    branches: [main]
+
+permissions: write-all
 
 env:
-  Branches: main,Index.php
+  Branches: main
   MainBranch: main
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: npm i
   BuildCommand: npm run build
-  Output: ./index.php
+  Output: ./
 
 jobs:
   build:
